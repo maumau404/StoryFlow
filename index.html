@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Floresta das Escolhas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section class="sessao_home">
+        <h1>Escolha sua história...
+            <br>
+            mas lembre-se você é o único responsável por suas decisões <i class="fa-solid fa-skull-crossbones"></i>
+        </h1>
+
+
+        <div class="home_imagem">
+
+            <div class="card_home">
+                <img class="tamanho_imagem" src="assets/Home1.png" alt="">
+
+                <a href="#landing-dois">
+                    <button>Game 1</button>
+                </a>
+
+
+            </div>
+            <div class="card_home">
+
+                <img class="tamanho_imagem" src="assets/game 2/Começo.png" alt="">
+
+                <a href="#landing-tres">
+                    <button>Game 2</button>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="sessao_um">
+        <div id="landing-dois" class="container">
+
+            <h1>🌙 A Floresta das Escolhas</h1>
+
+            <div class="scene">
+
+                <p id="story">
+                    Você acorda perdido em uma floresta escura. A lua ilumina dois caminhos.
+                </p>
+
+                <div class="imagem_historias">
+                    <img id="imagem-cenario" class="tamanho_imagens" src="assets/1.png" alt="dois caminhos">
+
+                </div>
+
+                <div id="choices" class="botoes">
+
+                    <button onclick="nextScene('caminho')">
+                        Seguir pelo caminho
+                    </button>
+
+                    <button onclick="nextScene('floresta')">
+                        Entrar na floresta densa
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="sessao_um">
+        <div id="landing-tres" class="container">
+
+            <h1><i class="fa-solid fa-person"></i>Eco de Identidade</h1>
+
+            <div class="scene">
+
+                <p id="story">
+                    Você acorda em um quarto de hotel de luxo. Suas roupas estão sujas de terra e sua cabeça lateja.
+                    Você não lembra do seu nome, mas no seu bolso há um bilhete amassado e um celular quebrado
+                </p>
+
+                <div class="imagem_historias">
+                    <img id="imagem-cenario" class="tamanho_imagens" src="assets/game 2/Começo.png" alt="dois caminhos">
+
+                </div>
+
+                <div id="choices" class="botoes">
+
+                    <button onclick="nextScene('caminho')">
+                        Tentar ligar o celular
+                    </button>
+
+                    <button onclick="nextScene('floresta')">
+                        Ler o bilhete amassado
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="Game2.js"></script>
+
+</body>
+
+</html>

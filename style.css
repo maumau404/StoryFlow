@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f0f0f;
+    color: rgb(255, 255, 255);
+    
+    /* font-family: Arial; */
+    overflow-x: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; */
+
+
+}
+
+section {
+    /* adicionei essa linha */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.sessao_home {
+    background-image: url('assets/fundos/Fundo1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.sessao_um {
+    background-image: url('assets/fundos/Fundo1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.intro-img {
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+p {
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.scene {
+
+    background: #1b1b1b;
+    padding: 40px;
+    border-radius: 10px;
+    animation: fade 0.8s;
+    /* opacity: 1;
+    transition: opacity 0.4s ease; */
+
+    width: 600px;
+    /* Largura fixa para evitar balanço lateral */
+    min-height: 400px;
+    /* Ajuste esse valor conforme o tamanho das suas fotos + texto */
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem_historias.fade-out {
+    opacity: 0.1;
+    /* Fica totalmente transparente */
+}
+
+.imagem_historias {
+    display: flex;
+    justify-content: center;
+
+    opacity: 1;
+    transition: opacity 0.4s ease;
+
+}
+
+.tamanho_imagens {
+    width: 100%;
+    max-width: 550px;
+    height: 270px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+
+    background: red;
+    border: none;
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(247, 244, 244);
+    
+    padding: 12px 25px;
+    margin: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border-radius: 9px;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+    box-shadow: 5px 5px 50px #131212 inset;
+
+}
+
+
+
+@keyframes fade {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+.home_imagem {
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    /* background-color: aqua; */
+    flex-direction: row;
+    padding-top: 60px;
+    gap: 40px;
+    width: 100%;
+
+}
+
+.tamanho_imagem {
+    width: 100%;
+    max-width: 550px;
+    height: 270px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card_home img {
+    transition: all 300ms ease-in-out;
+}
+
+
+.card_home img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(3deg);
+
+}
+
+.card_home {
+    display: flex;
+    flex-direction: column;
+    /* Coloca imagem em cima e botão embaixo */
+    align-items: center;
+    /* Centraliza a imagem e o botão horizontalmente entre si */
+    gap: 20px;
+}
+
+.card_home a {
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
