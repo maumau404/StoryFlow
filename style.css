@@ -175,8 +175,6 @@ button:hover {
 .home_imagem {
     display: flex;
     justify-content: center;
-    /* height: 100vh; */
-    /* background-color: aqua; */
     flex-direction: row;
     padding-top: 60px;
     gap: 40px;
@@ -217,9 +215,12 @@ button:hover {
     font-style: italic;
 }
 
-
 .rodape_final {
-    background-image: url(assets/fundos/Fundo1.svg);
+    background-image: url('assets/fundos/Fundo1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: none;
     background-color: none;
     width: 100vw;
@@ -228,20 +229,28 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10px;
-    
-    /*  display: flex;
-    height: 70px;
-    width: 100vw;
-    align-items: center;
-    position: relative;
-    justify-content: center; */
 
 }
+
 
 .rodape_final p {
     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 12px;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0,
+        "XELA" 0,
+        "YELA" 0;
+
 }
 
 .rodape_icone {
@@ -250,18 +259,6 @@ button:hover {
     cursor: pointer;
     padding: 20px 40px;
     position: absolute;
-    right: 0;           
+    right: 0;
     height: 100%;
-
-
-
-
-    /* display: flex;
-    height: 80px;
-    width: 100vw;
-    justify-content: end;
-    align-items: center;
-    padding-right: 20px;
-    cursor: pointer; */
-
 }
