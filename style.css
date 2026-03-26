@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 body {
     background: #0f0f0f;
     color: rgb(255, 255, 255);
-    
+
     /* font-family: Arial; */
     overflow-x: hidden;
     /* display: flex;
@@ -133,7 +133,7 @@ button {
     font-weight: 700;
     font-style: normal;
     color: rgb(247, 244, 244);
-    
+
     padding: 12px 25px;
     margin: 10px;
 
@@ -215,4 +215,53 @@ button:hover {
     font-family: "Iosevka Charon", monospace;
     font-weight: 700;
     font-style: italic;
+}
+
+
+.rodape_final {
+    background-image: url(assets/fundos/Fundo1.svg);
+    color: none;
+    background-color: none;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+    /*  display: flex;
+    height: 70px;
+    width: 100vw;
+    align-items: center;
+    position: relative;
+    justify-content: center; */
+
+}
+
+.rodape_final p {
+    display: flex;
+    position: absolute;
+}
+
+.rodape_icone {
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+    padding: 20px 40px;
+    position: absolute;
+    right: 0;           
+    height: 100%;
+
+
+
+
+    /* display: flex;
+    height: 80px;
+    width: 100vw;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer; */
+
 }

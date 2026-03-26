@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>A Floresta das Escolhas</title>
+    <title>StoryFlow</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,13 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicons/favi.ico">
 
 </head>
 
 <body>
 
-    <section class="sessao_home">
+    <section id="sessao-home" class="sessao_home">
         <h1>Escolha sua história...
             <br>
             mas lembre-se você é o único responsável por suas decisões <i class="fa-solid fa-skull-crossbones"></i>
@@ -91,23 +92,24 @@
 
             <div class="scene">
 
-                <p id="story">
+                <p id="story-2">
                     Você acorda em um quarto de hotel de luxo. Suas roupas estão sujas de terra e sua cabeça lateja.
                     Você não lembra do seu nome, mas no seu bolso há um bilhete amassado e um celular quebrado
                 </p>
 
                 <div class="imagem_historias">
-                    <img id="imagem-cenario" class="tamanho_imagens" src="assets/game 2/Começo.png" alt="dois caminhos">
+                    <img id="imagem-cenario-2" class="tamanho_imagens" src="assets/game 2/Começo.png"
+                        alt="dois caminhos">
 
                 </div>
 
-                <div id="choices" class="botoes">
+                <div id="choices-2" class="botoes">
 
-                    <button onclick="nextScene('caminho')">
+                    <button onclick="nextScene2('celular')">
                         Tentar ligar o celular
                     </button>
 
-                    <button onclick="nextScene('floresta')">
+                    <button onclick="nextScene2('bilhete')">
                         Ler o bilhete amassado
                     </button>
 
@@ -118,7 +120,26 @@
         </div>
     </section>
 
+    <footer class="rodape_final">
+
+        <img src="assets/fundos/wave certa.svg" alt="rodapé">
+        <p>&copy 2026 Maurício Gomes</p>
+
+
+        <div class="rodape_icone">
+
+            <a href="#sessao-home">
+
+                <i class="fa-solid fa-circle-up fa-2xl" style="color: rgb(241, 4, 4);"></i>
+
+            </a>
+
+        </div>
+
+    </footer>
+
     <script src="script.js"></script>
+
     <script src="Game2.js"></script>
 
 </body>
