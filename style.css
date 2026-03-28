@@ -262,3 +262,95 @@ button:hover {
     right: 0;
     height: 100%;
 }
+
+@media (max-width: 1060px) {
+    .tamanho_imagem {
+        display: flex;
+        width: 280px;
+        height: auto;
+    }
+    .container {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .rodape_final p {
+        padding-bottom: 25px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .home_imagem {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        gap: 5px;
+        padding: 5px;
+    }
+    .sessao_home{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       height: 100vh;
+    }
+    .sessao_home h1{
+       font-size: 18px;
+       padding-top: 10px;
+       max-width: 300px;
+    }
+    .tamanho_imagem, .tamanho_imagens {
+        display: flex;
+        width: 280px;
+        height: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .scene {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        height: 440px;
+        min-height: 300px;
+        align-items: center;
+    
+    }
+    #story {
+        padding-bottom: 30px;
+    }
+    .scene p {
+        padding: 0;
+    }
+    .botoes button {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100px;
+       height: 70px;
+       font-size: 13px;
+    }
+    .botoes {
+       width: 300px;
+       height: 100px;
+       text-align: center; 
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .rodape_final p{
+        font-size: 7px;
+    }
+    .rodape_icone {
+        padding-top: 70px;
+        padding-right: 20px;  
+    }
+    
+}
