@@ -284,77 +284,102 @@ button:hover {
 
 
 @media (max-width: 640px) {
-    .home_imagem {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-        gap: 5px;
-        padding: 5px;
-    }
-    .sessao_home {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-    }
-    .sessao_home h1 {
-        font-size: 18px;
-        padding-top: 10px;
-        max-width: 300px;
-    }
-    .tamanho_imagem,
-    .tamanho_imagens {
-        display: flex;
-        width: 280px;
-        height: auto;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-    }
-    .scene {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 300px;
-        height: 440px;
-        min-height: 300px;
-        align-items: center;
-    }
-    #story {
-        padding-bottom: 30px;
-    }
-    .scene p {
-        padding: 0;
-    }
-    .botoes button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100px;
-        height: 70px;
-        font-size: 13px;
-    }
-    .botoes {
-        width: 300px;
-        height: 100px;
-        text-align: center;
-    }
-    h1 {
-        font-size: 25px;
-    }
-    .rodape_final {
-        background-attachment: fixed;
-    }
-    .rodape_final p {
-        font-size: 7px;
-    }
-    .rodape_icone {
-        padding-top: 70px;
-        padding-right: 20px;
+    body {
+        height: auto !important;
+        min-height: 0 !important;
     }
 
+    .home_imagem,
+    .sessao_home,
+    .container {
+        display: flex;
+        justify-content: center;
+        /* padding: 0; */
+
+        height: auto !important;
+        min-height: 100svh;
+        padding: 10px 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .sessao_home h1 {
+        font-size: 18px;
+        height: 40px;
+        max-width: 300px;
+    }
+
+    .tamanho_imagem,
+    .tamanho_imagens {
+        /* width: 280px; */
+        height: auto;
+        width: 260px;
+    }
+
+    .scene {
+        width: 90%;
+        max-width: 310px;
+        height: auto;
+        padding: 25px 15px;
+        margin: auto 0; /* Ajuda a "flutuar" no centro da section */
+        /* width: 95%;
+        max-width: 300px;
+        height: auto;
+        padding: 20px; */
+    }
+
+    .botoes button {
+        width: 100px;
+        height: 80px;
+        font-size: 13px;
+    }
+
+    .rodape_final {
+        background-image: none !important;
+        background-color: transparent !important;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .rodape_final img {
+        background-image: url('assets/fundos/Fundo1.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .rodape_final p {
+        
+        position: absolute !important;
+        bottom: 12px !important;
+        padding: 0 !important;
+        margin: 0;
+        width: 100%;
+        font-size: 7px;
+        z-index: 5;
+    }
+
+    .rodape_icone {
+        
+        position: absolute !important;
+        bottom: 8px !important;
+        right: 15px !important;
+        padding: 0 !important;
+        height: auto !important;
+        z-index: 5;
+    }
+
+    .rodape_icone i {
+        font-size: 1.5rem;
+    }
 }
