@@ -309,10 +309,12 @@ button:hover {
         height: 40px;
         max-width: 300px;
     }
+    .sessao_um h1 {
+        padding-top: 10px;
+    }
 
     .tamanho_imagem,
     .tamanho_imagens {
-        /* width: 280px; */
         height: auto;
         width: 260px;
     }
@@ -322,16 +324,12 @@ button:hover {
         max-width: 310px;
         height: auto;
         padding: 25px 15px;
-        margin: auto 0; /* Ajuda a "flutuar" no centro da section */
-        /* width: 95%;
-        max-width: 300px;
-        height: auto;
-        padding: 20px; */
+        margin: auto 0;
     }
 
     .botoes button {
         width: 100px;
-        height: 80px;
+        height: 90px;
         font-size: 13px;
     }
 
@@ -350,7 +348,7 @@ button:hover {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        /* background-attachment: fixed; */
+        background-attachment: fixed;
 
         display: block;
         width: 100%;
